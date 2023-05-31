@@ -1,0 +1,100 @@
+body {
+    font-family: 'Heebo', sans-serif;
+    display: block;
+    margin: 0;
+}
+
+.wrapper {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    gap: 50px;
+}
+
+.otef-gadol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+img {
+    flex: 3;
+    object-fit: cover;
+    width: 900px;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    background-color: #F6F6F6;
+    border-bottom: 3px solid #cf071e;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    width: 250px;
+    height: 19px;
+}
+
+label {
+    color: #2C2C2C;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.button {
+    background-color: #f10606;
+    color: white;
+    font-size: 1rem;
+    width: 100px;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+.otef {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.wrapper p {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        flex-direction: column;
+        overflow-wrap: break-word;
+        align-items: center;
+    }
+
+    .form-container {
+        margin-bottom: 35px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    .button {
+        max-width: 100%;
+    }
+
+    img {
+        width: 100%;
+        flex: 1;
+    }
+
+}
